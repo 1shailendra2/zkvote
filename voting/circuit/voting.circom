@@ -4,11 +4,11 @@ include "circomlib/circuits/MerkleProof20.circom";
 
 
 template Vote() {
-    signal input voterID;                // raw voter ID or secret
-    signal input pathElements[20];       // Merkle siblings
-    signal input pathIndices[20];        // Merkle path bits
-    signal input voteOption;             // vote (0 or 1, etc)
-    signal input nullifier;              // used to prevent double voting
+    signal input voterID;               
+    signal input pathElements[20];       
+    signal input pathIndices[20];      
+    signal input voteOption;             
+    signal input nullifier;              
 
     signal output root;
     signal output vote;
